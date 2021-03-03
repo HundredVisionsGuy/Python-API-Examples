@@ -30,7 +30,14 @@
         # Now is the time to have some fun.
     ```
 5. use the `.json()` method to get the JSON response
-6. Use the key to capture 
+    ```
+    json_object = resp.json()
+    ```
+6. Loop through the JSON object and use the key to capture the specific data you want 
+    ```
+    for item in json_object:
+        datum = item['json_key']
+    ```
 
 ## Credits:  
  * [API Integration in Python](https://realpython.com/api-integration-in-python)
