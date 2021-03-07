@@ -1,6 +1,10 @@
 ########################################
-# Another example using the JokeAPI
+# random_jokes.py
+# by Hundred Visions Guy
+# Another REST API example using 
+# the JokeAPI
 ########################################
+
 # import statements
 import requests
 import random

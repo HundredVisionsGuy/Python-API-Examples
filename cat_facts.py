@@ -21,6 +21,10 @@ url = base_url + endpoint + query_params
 # new API call
 resp = requests.get(url)
 
+# What happens if we print the response?
+input("Press enter to see the response.")
+print("The response is " + str(resp))
+
 # test status (200 is what we want)
 if resp.status_code != 200:
   # This means something went wrong.
@@ -28,12 +32,28 @@ if resp.status_code != 200:
 else:
     # let's process the JSON object
     facts_json = resp.json()
-    cat_facts = []
 
-    for fact in facts_json:
-        cat_facts.append(fact['text'])
+    # What does the JSON object look like?
+    input("Press enter to see what the JSON object looks like.")
+    print(facts_json)
 
-    # show each dog fact on its own line
-    for i in cat_facts:
-        print(i)
+    # Note the data type
+    input("Press enter to see what data type the JSON object is.")
+    print( type(facts_json) )
+
+    # TODO: Try to loop through facts_json
+
+    # What does the first item look like?
+    input("Press enter to see what the first item in the JSON object.")
+    first_fact = facts_json[0]
+    
+    print( first_fact )
+
+    # What is the first fact?
+    input("Press enter to see what data type the first item is.")
+    print( "The first fact is a " + str(type(first_fact)) )
+
+    input("Press enter to see how to access elements of a dictionary.")
+    print( "fact['type'] = " + first_fact['type'] )
+    print( "fact['text'] = " + first_fact['text'] )
 
