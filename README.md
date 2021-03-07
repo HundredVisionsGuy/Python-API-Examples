@@ -38,19 +38,21 @@
     for item in json_object:
         datum = item['json_key']
     ```
-7. The other thing you can do is extract the currencies with their rates like so...
+7. NOTE: Python treats JSON objects as dictionaries
     ```
-    # get all items & convert them to a list
+    # Do you want a list of all keys and their values?
     items = json_object.items()
     items = list( items )
     
-    # Grab the rates (1st row, 2nd column)
-    rates = items[0][1]
-    
-    # Get the currency and rates & convert them to a list
-    rates = rates.items()
-    rates = list(rates)
+    # Do you want a list of all keys?
+    keys = json_object.keys()
+    keys = list( keys )
+
+    # Do you want a list of all values?
+    values = json_object.values()
+    values = list( values )
     ```
+    
 8. The REST is up to you (little API humor - just look up REST to see what I mean).
 
 ## Credits:  
