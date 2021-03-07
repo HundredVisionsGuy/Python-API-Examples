@@ -40,10 +40,6 @@
     ```
 7. NOTE: Python treats JSON objects as dictionaries
     ```
-    # Do you want a list of all keys and their values?
-    items = json_object.items()
-    items = list( items )
-    
     # Do you want a list of all keys?
     keys = json_object.keys()
     keys = list( keys )
@@ -51,6 +47,10 @@
     # Do you want a list of all values?
     values = json_object.values()
     values = list( values )
+
+    # Do you want a list of all keys and their values?
+    items = json_object.items()
+    items = list( items )
     ```
     
 8. The REST is up to you (little API humor - just look up REST to see what I mean).
