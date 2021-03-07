@@ -59,4 +59,4 @@
  * [API Integration in Python](https://realpython.com/api-integration-in-python)
  * [Official Joke API](https://github.com/15Dkatz/official_joke_api)
  * [Public APIs](https://github.com/public-apis/public-apis)
-
+ * [W3 Schools article on Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
